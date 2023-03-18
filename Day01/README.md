@@ -1,6 +1,6 @@
 # Day 01: Introduction to Google Cloud
 
-> Not the page you want to view? [Back to home page](../)
+> Not the page you want to view? [Back to home page](../README.md)
 
 In this theory session, we will be going through the introduction to cloud computing and Google Cloud as a whole. We will learn:
 
