@@ -41,21 +41,33 @@ The `server.zip` file can be downloaded in [this link](https://drive.google.com/
 
 ### Step 03: Enable Compute Engine API
 
-```diff
-- Developing in progress ...
-```
+Type "VM instance" in the search tab of the Google Cloud Platform Console or navigate by "Compute Engines > VM instances" from the navigation bar. A page should appear for you to enable the Compute Engine API.
+
+Click "Enable".
 
 ### Step 04: Setting up firewall rule
 
-Type "firewall" in the search tab of the Google Cloud Platform Console or navigate by "VPC Network > Firewall" from the navigation.
+Type "firewall" in the search tab of the Google Cloud Platform Console or navigate by "VPC Network > Firewall" from the navigation bar.
 
-In the Firewall page, 
+In the Firewall page, click "Create Firewall Rule" and make the following configurations:
+
+* Priority: 1
+* Target: "specific" change to "all instances in the network"
+* IPv4 range: 0.0.0.0/0
+* TCP: 25565
+
+Then click "Create".
 
 ### Step 05: Creating a VM
 
-```diff
-- Developing in progress ...
-```
+Type "VM instance" in the search tab of the Google Cloud Platform Console or navigate by "Compute Engines > VM instances" from the navigation bar.
+
+In the VM Instance page, click "Create Instance" and make the following configurations:
+
+* Name: <ANY_NAME_YOU_WANT>
+* Region: asia-southeast1 (Singapore)
+
+Then click "Create".
 
 ### Step 06: Uploading `server.zip` file to VM
 
