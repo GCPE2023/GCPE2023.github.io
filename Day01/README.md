@@ -19,11 +19,11 @@ Some details about the event can be found in the [Event Page](https://gdsc.commu
 
 ## Hands-On: Host your own Minecraft server
 
-This manual is written by [Lee Weng Hong](https://github.com/AsynchronousNotAvailable) and [Ariq Ramdhany](https://github.com/ramdhanyA).
+This manual is written by [Lee Weng Hong](https://github.com/AsynchronousNotAvailable) and [Ariq Ramdhany](https://github.com/ramdhanyA), edited by by [Lim Jun Yi](https://github.com/LimJY03).
 
 > In the workshop today, we will host our own Minecraft server on a Google Cloud VM Instance.
 
-### Step 01: Install `server.zip` file
+### Step 01: Downloading the `server.zip` file
 
 The `server.zip` file can be downloaded in [this link](https://drive.google.com/file/d/1ZWcqk4kx4qZZNx29v-qSBPull9YHCoPQ/view). Download it to a local directory in your computer and remember where the directory.
 
@@ -31,6 +31,8 @@ The `server.zip` file can be downloaded in [this link](https://drive.google.com/
 > <br>The video tutorial can be found [here](https://drive.google.com/file/d/1hpJDs59mpguvUomvkp3qSjBgMGutGLLk/view).
 
 ### Step 02: Setup GCP free trial account
+
+You can skip this step if you already have a billing account linked to your GCP account.
 
 ```diff
 - Developing in progress ...
