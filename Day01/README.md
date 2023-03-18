@@ -30,15 +30,42 @@ The `server.zip` file can be downloaded in [this link](https://drive.google.com/
 
 ### Step 02: Setup GCP free trial account
 
+```diff
+- Developing in progress ...
+```
+
+> **Note**
+> <br>If you encounter errors, try using different account (non organizational account), or different cards.
+
 ### Step 03: Enable Compute Engine API
+
+```diff
+- Developing in progress ...
+```
 
 ### Step 04: Setting up firewall rule
 
+```diff
+- Developing in progress ...
+```
+
 ### Step 05: Creating a VM
+
+```diff
+- Developing in progress ...
+```
 
 ### Step 06: Uploading `server.zip` file to VM
 
+```diff
+- Developing in progress ...
+```
+
 ### Step 07: Setting up VM environment
+
+```diff
+- Developing in progress ...
+```
 
 ### Step 08: Unzipping `server.zip`
 
