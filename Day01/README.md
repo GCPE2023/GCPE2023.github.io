@@ -45,9 +45,9 @@ The `server.zip` file can be downloaded in [this link](https://drive.google.com/
 
 ### Step 04: Setting up firewall rule
 
-```diff
-- Developing in progress ...
-```
+Type "firewall" in the search tab of the Google Cloud Platform Console or navigate by "VPC Network > Firewall" from the navigation.
+
+In the Firewall page, 
 
 ### Step 05: Creating a VM
 
@@ -57,14 +57,47 @@ The `server.zip` file can be downloaded in [this link](https://drive.google.com/
 
 ### Step 06: Uploading `server.zip` file to VM
 
-```diff
-- Developing in progress ...
+After your VM instance starts running, click on the `SSH` button and a SSH terminal window will pop up. 
+
+In the SSH terminal, click on "Upload File" at the top right corner of the window. Then, choose the `server.zip` file. It will take some time for the file to finish uploading into the VM instance.
+
+After the upload completes, type the following command to list the files available in the current directory:
+
+```sh
+ls
 ```
+
+By default, only the `server.zip` will be shown in the output.
 
 ### Step 07: Setting up VM environment
 
-```diff
-- Developing in progress ...
+In our VM instance, we will only be installing two things: `unzip` and `jdk` (Java Development Kit). We will start with the installation of `unzip`.
+
+Type the following to install `unzip` in the VM instance. It will be used to unzip our `server.zip` file uploaded just now:
+
+```sh
+sudo apt install unzip
+```
+
+Then, check the version of `unzip` with the following command:
+
+```sh
+unzip --version
+```
+
+> **Note**
+> <br>The `--version` flag is used in Linux to display the version of the application / program installed.
+
+Now we will proceed with the installation of `jdk`. Type the following command to install `jdk` in the VM instance. It will be used to launch our Minecraft server on the VM isntance:
+
+```sh
+sudo apt install openjdk-17-jdk
+```
+
+We are installing this version of `jdk` since it is the required version to run a `1.19.3` Minecraft Java server. Again we can check the version of the installed `jdk` with the `--version` flag:
+
+```sh
+java --version
 ```
 
 ### Step 08: Unzipping `server.zip`
