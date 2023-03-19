@@ -42,37 +42,82 @@ git clone https://github.com/dscum/GCPE2023-Website.git
 
 ### Step 04: Modify the website content
 
-```diff
-- Developing in progress ...
+Unzip the downloaded ZIP file if you chose to "Download ZIP" in the previous step, then navigate to "finished" > "public". In this step, we will be replacing the `profile.jpg` with your own image renamed `profile.jpg`. If your image has different name or different file extension (ie `png` or `webp` etc.), you can modify the code in **Line 33** of the `index.html` file to modify the image path.
+
+```html
+<img src="./<YOUR_FILE_NAME.EXTENSION>" alt="profile picture">
+```
+
+Change the `<YOUR_FILE_NAME.EXTENSION>` to the file name of your image. For instance, if your file name is `myprofile.png` then change **Line 33** of the `index.html` file to the following:
+
+```html
+<img src="./myprofile.png" alt="profile picture">
 ```
 
 ### Step 05: Login to Firebase through CLI
 
-```diff
-- Developing in progress ...
+Open up your Firebase CLI, type the following into the CLI terminal:
+
+```sh
+firebase login
 ```
 
-### Step 06: Initializing Firebase CLI
+This will let your Firebase CLI have access to the projects in your account.
 
-```diff
-- Developing in progress ...
+> **Note**
+> <br>If this is your first time logging into the Firebase through CLI, it will open up a new window for you to choose your account to sign in to Firebase.
+
+Then, we will navigate to our `finished` folder in the Firebase CLI. We will perform the `cd` command to change the directory of the CLI. We will need to copy the folder path for this step, type the following command in the CLI and replace the `<FOLDER_PATH>` with your copied folder path:
+
+```sh
+cd <FOLDER_PATH>
 ```
+
+> **Note**
+> <br>You can copy your folder path by right-clicking on the folder and click "Copy Path"
+
+We can type `dir` (for Windows) or `ls` (for LinuxOS and MacOS) in the Firebase CLI to look at the files in our directory. The only folder inside should be the `public` folder.
+
+### Step 06: Initializing Firebase Hosting
+
+Now we will initialize our Firebase project on our set directory by typing the command below:
+
+```sh
+firebase init hosting
+```
+
+We will choose "Use an existing project" because we have already created the project in Firebase website. For the "Hosting Setup", we will put `public`, `Yes`, `No`, `No` for the next 4 prompts in the Firebase CLI. What we've done is:
+
+* `public`: we set the `public` folder as the Public directory accessible anywhere online.
+* `Yes`: all requests to non-existence urls or files for our web application will be directed to `index.html` page. Learn more in [Firebase Documentation](https://firebase.google.com/docs/hosting/full-config#rewrites).
+* `No`: since our file is deployed locally instead of directly from GitHub, we do not need this option.
+* `No`: we don't need to overwrite our available `index.html` page with the firebase generated file.
+
+In this part, few files will be created in the `finished` folder:
+
+* `firebase.json`
+* `.firebaserc`
 
 ### Step 07: Deploy to Firebase
 
-```diff
-- Developing in progress ...
+Finally, we will deploy our website to Firebase server with the following command:
+
+```sh
+firebase deploy
 ```
+
+We can make further changes to our website locally and when we are ready to push the updates to firebase, we will redeploy by typing the command above again in Firebase CLI.
+
+> **Note**
+> <br>If refreshing the tab does not show any changes, press "ctrl+shift+R" (for Windows) or "cmd+shift+R" (for MacOS) to force reload and clear the browser cache.
 
 ### Step 08: Clean Up
 
-```diff
-- Developing in progress ...
-```
+Open back your Firebase website, select your project and at the left panel, click the `settings` icon and the Project Settings page should open. Under the `general` tab, scroll to the bottom and click "Delete Project". However, we will be upgrading the current website with implementation of more features
 
 ### Complete!
 
-You have successfully hosted your own Website on Firebase server!
+You have successfully hosted your own website on Firebase server!
 
 ### More Readings
 
