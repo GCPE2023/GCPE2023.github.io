@@ -9,7 +9,7 @@ In this theory session, we will be going through the basics of website developme
 
 Some details about the event can be found in the [Event Page](https://gdsc.community.dev/events/details/developer-student-clubs-university-of-malaya-presents-gcpe-google-cloud-platform-for-everyone-workshop-2023-2023-03-19/). Below are some of the useful links that are relevant to the theory today.
 
-* [Keynote](./assets/slide.pdf) by Dominic Chong Rong Yau and Peh Kyung Kit.
+* [Keynote](./assets/slide.pdf) by [Dominic Chong Rong Yau](https://github.com/dominicchong) and Peh Kyung Kit.
 * [Slido Q&A Link](https://app.sli.do/event/ip3RAVqsNXxdr6V9fMoHJz/live/questions)
 * [Online HTML Editor](https://www.tutorialspoint.com/online_html_editor.php)
 
@@ -17,7 +17,7 @@ Some details about the event can be found in the [Event Page](https://gdsc.commu
 
 ## Hands-On: Host your Website on Firebase
 
-This manual is written by Dominic Chong, edited by by [Lim Jun Yi](https://github.com/LimJY03).
+This manual is written by [Dominic Chong Rong Yau](https://github.com/dominicchong), edited by by [Lim Jun Yi](https://github.com/LimJY03).
 
 > In the workshop today, we will host our website on Firebase.
 
