@@ -11,7 +11,7 @@ In this theory session, we will be going through the introduction to cloud compu
 
 Some details about the event can be found in the [Event Page](https://gdsc.community.dev/events/details/developer-student-clubs-university-of-malaya-presents-gcpe-google-cloud-platform-for-everyone-workshop-2023-2023-03-18/). Below are some of the useful links that are relevant to the theory today.
 
-* [Keynote](./assets/Introduction-to-Google-Cloud.pdf) by [Lim Jun Yi](https://github.com/LimJY03) and Lim Jack Sheng.
+* [Keynote](./assets/Introduction-to-Google-Cloud.pdf) by [Lim Jun Yi](https://github.com/LimJY03) and [Lim Jack Sheng](https://github.com/Jacksheng127).
 * [Google Cloud services and products](https://cloud.google.com/products)
 * [Cloud Digital Leaders learning path](https://cloud.google.com/certification/cloud-digital-leader)
 
