@@ -79,6 +79,12 @@ git checkout workshop-3-starter
 
 ### Step 05: Creating a new Google Sheets
 
+```diff
+- Developing in progress ...
+```
+
+### Step 06: Writing App Script code
+
 ```js
 const sheetName = 'Sheet1'
 const scriptProp = PropertiesService.getScriptProperties()
@@ -126,17 +132,11 @@ function doPost (e) {
 - Developing in progress ...
 ```
 
-### Step 06: Writing App Script code
-
-```diff
-- Developing in progress ...
-```
-
 ### Step 07: Configure HTML Form
 
 ```html
 <form id="my-form" method="POST"
-    action="https://script.google.com/macros/s/AKfycbyXNTd1A7hbIVe5DYCQAq_CM-AOsmGfNnbx7KAwKbNHsnb2yhZr5xSzTO8HN0dkqSepuQ/exec">
+    action="<YOUR_DEPLOYMENT_URL>">
     <input class="text-input" name="Email" type="email" placeholder="Email" required />
     <input class="text-input" name="Name" type="text" placeholder="Name" required />
     <input class="text-input" name="Number" type="text" placeholder="Phone number" required />
