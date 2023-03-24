@@ -4,13 +4,14 @@
 
 In this theory session, we will be going through the basics of website development. We will learn:
 
-* Introduction to HTML and CSS
-* Introduction to Web Hosting
+* Introduction to Application Programming Interface (API)
+* Introduction to NodeJS
+* POST and GET Requests
 
-Some details about the event can be found in the [Event Page](https://gdsc.community.dev/events/details/developer-student-clubs-university-of-malaya-presents-gcpe-google-cloud-platform-for-everyone-workshop-2023-2023-03-19/). Below are some of the useful links that are relevant to the theory today.
+Some details about the event can be found in the [Event Page](https://gdsc.community.dev/events/details/developer-student-clubs-university-of-malaya-presents-gcpe-google-cloud-platform-for-everyone-workshop-2023-2023-03-25/). Below are some of the useful links that are relevant to the theory today.
 
-* [Keynote](./assets/slide.pdf) by [Tiew Chee Yan](https://github.com/Cheeyan902) and [Lee Weng Hong](https://github.com/AsynchronousNotAvailable).
-* [Slido Q&A Link](https://app.sli.do/event/ip3RAVqsNXxdr6V9fMoHJz/live/questions)
+* Keynote by [Tiew Chee Yan](https://github.com/Cheeyan902) and [Lee Weng Hong](https://github.com/AsynchronousNotAvailable).
+* Slido Q&A Link
 
 ---
 
@@ -42,50 +43,135 @@ Click the “Next” button for custom page set up since there is no any changes
 
 ![download5_img](./assets/nodejs5.png)
 
-Continue by clicking on the “Install” button. It may take a few minutes based on system performance for installation. You will get a message like below:
+Continue by clicking on the “Install” button. It may take a few minutes based on system performance for installation. You will get a success message as below:
 
-```Node.js has been successfully installed once it is completed.```
+![download6_img](./assets/nodejs6.png)
 
-### Step 02: Login to Firebase Website
+To verify that node.js has been successfully installed in your system, open the terminal and **run it as administrators** by writing the command below to check the version of it.
 
-We will now go to the [Firebase website](https://firebase.google.com/). Log in with the account that you used to activate Free Trial on Google Cloud Platform.
+```sh
+node -v
+```
 
-Then, create a new project by clicking "Get Started" > "Create a Project". Name your project with a **unique** name.
+Additionally, we will need to install Visual Studio Code from [this link](https://code.visualstudio.com/download).
 
-### Step 03: Download website template
+### Step 02: Set up Live Server extension
 
-Download the website template from [this GitHub repo](https://github.com/dscum/GCPE2023-Website). To download it, click on the green "Code" button and click "Download ZIP", or you can:
+```diff
+- Developing in progress ...
+```
+
+### Step 03: Download login page template
+
+Download the website template from [this GitHub repo](https://github.com/dscum/GCPE2023-Website/tree/workshop-3-starter). To download it, click on the green "Code" button and click "Download ZIP", or you can:
 
 ```sh
 # Only if you have Git installed
 git clone https://github.com/dscum/GCPE2023-Website.git
+git checkout workshop-3-starter
 ```
 
-### Step 04: Modify the website content
+### Step 04: Modify the website content *(Optional)*
 
 ```diff
 - Developing in progress ...
 ```
 
-### Step 05: Login to Firebase through CLI
+### Step 05: Creating a new Google Sheets
+
+```js
+const sheetName = 'Sheet1'
+const scriptProp = PropertiesService.getScriptProperties()
+
+function initialSetup () {
+    const activeSpreadsheet = SpreadsheetApp.getActiveSpreadsheet()
+    scriptProp.setProperty('key', activeSpreadsheet.getId())
+}
+
+function doPost (e) {
+    const lock = LockService.getScriptLock()
+    lock.tryLock(10000)
+
+    try {
+        const doc = SpreadsheetApp.openById(scriptProp.getProperty('key'))
+        const sheet = doc.getSheetByName(sheetName)
+
+        const headers = sheet.getRange(1, 1, 1, sheet.getLastColumn()).getValues()[0]
+        const nextRow = sheet.getLastRow() + 1
+
+        const newRow = headers.map(function(header) {
+            return header === 'Date' ? new Date() : e.parameter[header]
+        })
+
+        sheet.getRange(nextRow, 1, 1, newRow.length).setValues([newRow])
+
+        return ContentService
+            .createTextOutput(JSON.stringify({ 'result': 'success', 'row': nextRow }))
+            .setMimeType(ContentService.MimeType.JSON)
+    }
+
+    catch (e) {
+        return ContentService
+            .createTextOutput(JSON.stringify({ 'result': 'error', 'error': e }))
+            .setMimeType(ContentService.MimeType.JSON)
+    }
+
+    finally {
+        lock.releaseLock()
+    }
+}
+```
 
 ```diff
 - Developing in progress ...
 ```
 
-### Step 06: Initializing Firebase CLI
+### Step 06: Writing App Script code
 
 ```diff
 - Developing in progress ...
 ```
 
-### Step 07: Deploy to Firebase
+### Step 07: Configure HTML Form
+
+```html
+<form id="my-form" method="POST"
+    action="https://script.google.com/macros/s/AKfycbyXNTd1A7hbIVe5DYCQAq_CM-AOsmGfNnbx7KAwKbNHsnb2yhZr5xSzTO8HN0dkqSepuQ/exec">
+    <input class="text-input" name="Email" type="email" placeholder="Email" required />
+    <input class="text-input" name="Name" type="text" placeholder="Name" required />
+    <input class="text-input" name="Number" type="text" placeholder="Phone number" required />
+    <input class="text-input" name="Course" type="text" placeholder="Course" required />
+    <input class="text-input" name="Year" type="text" placeholder="Year" required />
+    <button type="button" id="authorize_button" onclick="handleAuthClick()">Upload Profile Picture</button>
+    <img id="profile-picture" src="" alt="Profile Picture" height="100px" width = "100px">
+    <input id="profile-link" class="text-input" name="Picture" type="text" placeholder="Not selected" required READONLY/>
+    <button type="submit" class="submit" id="submit">Submit</button>
+</form>
+```
+
+```html
+<div id="loader" style="display:none;">
+    <img src="cloud.gif" alt="Loading..." />
+</div>
+```
 
 ```diff
 - Developing in progress ...
 ```
 
-### Step 08: Clean Up
+### Step 08: Enabling APIs and Configure Authentication
+
+```diff
+- Developing in progress ...
+```
+
+### Step 09: Deploy to Firebase
+
+```diff
+- Developing in progress ...
+```
+
+### Step 10: Clean Up
 
 ```diff
 - Developing in progress ...
