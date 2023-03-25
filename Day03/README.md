@@ -63,11 +63,11 @@ Additionally, we will need to install Visual Studio Code from [this link](https:
 
 ### Step 03: Download login page template
 
-Download the website template from [this GitHub repo](https://github.com/dscum/GCPE2023-Website/tree/workshop-3-starter). To download it, click on the green "Code" button and click "Download ZIP", or you can:
+Download the website template from [this GitHub repo](https://github.com/GCPE2023/GCPE2023-Website/tree/workshop-3-starter). To download it, click on the green "Code" button and click "Download ZIP", or you can:
 
 ```sh
 # Only if you have Git installed
-git clone https://github.com/dscum/GCPE2023-Website.git
+git clone https://github.com/GCPE2023/GCPE2023-Website.git
 git checkout workshop-3-starter
 ```
 

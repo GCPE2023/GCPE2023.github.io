@@ -33,11 +33,11 @@ Then, create a new project by clicking "Get Started" > "Create a Project". Name 
 
 ### Step 03: Download website template
 
-Download the website template from [this GitHub repo](https://github.com/dscum/GCPE2023-Website). To download it, click on the green "Code" button and click "Download ZIP", or you can:
+Download the website template from [this GitHub repo](https://github.com/GCPE2023/GCPE2023-Website). To download it, click on the green "Code" button and click "Download ZIP", or you can:
 
 ```sh
 # Only if you have Git installed
-git clone https://github.com/dscum/GCPE2023-Website.git
+git clone https://github.com/GCPE2023/GCPE2023-Website.git
 ```
 
 ### Step 04: Modify the website content
