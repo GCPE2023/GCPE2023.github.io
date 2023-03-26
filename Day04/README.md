@@ -77,6 +77,10 @@ gcloud services enable drive.googleapis.com vision.googleapis.com sheets.googlea
 - Developing in progress ...
 ```
 
+```sh
+python3 receipt-extractor.py --noauth_local_webserver
+```
+
 ### Step 08: Clean Up
 
 ```diff
