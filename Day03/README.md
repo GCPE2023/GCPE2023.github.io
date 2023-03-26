@@ -2,7 +2,7 @@
 
 > Not the page you want to view? [Back to home page](../README.md)
 
-In this theory session, we will be going through the basics of website development. We will learn:
+In this theory session, we will be going through the basics of linking to a backend database. We will learn:
 
 * Introduction to Application Programming Interface (API)
 * Introduction to NodeJS
@@ -53,15 +53,9 @@ To verify that node.js has been successfully installed in your system, open the 
 node -v
 ```
 
-Additionally, we will need to install Visual Studio Code from [this link](https://code.visualstudio.com/download).
+Additionally, we will need to install Visual Studio Code (VS Code) from [this link](https://code.visualstudio.com/download).
 
-### Step 02: Set up Live Server extension
-
-```diff
-- Developing in progress ...
-```
-
-### Step 03: Download login page template
+### Step 02: Download login page template
 
 Download the website template from [this GitHub repo](https://github.com/GCPE2023/GCPE2023-Website/tree/workshop-3-starter). To download it, click on the green "Code" button and click "Download ZIP", or you can:
 
@@ -71,6 +65,16 @@ git clone https://github.com/GCPE2023/GCPE2023-Website.git
 git checkout workshop-3-starter
 ```
 
+If you downloaded the file with "Download ZIP", extract (unzip) the zip file to Desktop for easier navigation.
+
+### Step 03: Set up Live Server extension
+
+Now we will open up our VS Code, then click "File" > "Open Folder", then select the extracted folder
+
+In your VS Code > Extensions > Enter Live Server in search bar > Click “Install” button > Enable Live Server Extension.
+
+Then, right click on the `login.html` file at the left panel and choose "Open with Live Server". This will prompt you a button that brings you to the login page [hosted locally](https://www.hostinger.my/tutorials/what-is-localhost) in your device.
+
 ### Step 04: Modify the website content *(Optional)*
 
 ```diff
@@ -79,9 +83,9 @@ git checkout workshop-3-starter
 
 ### Step 05: Creating a new Google Sheets
 
-```diff
-- Developing in progress ...
-```
+Using the account you use to sign up for Google Cloud Platform Free Trial, create a new Google Sheets and fill the first row with the following:
+
+![firstrow_img]()
 
 ### Step 06: Writing App Script code
 
@@ -183,4 +187,4 @@ You have successfully linked your Website to a backend Google Sheets!
 
 ### More Readings
 
-* []()
+* [Other Practical Use Case](https://www.youtube.com/watch?v=K6Vcfm7TA5U)
