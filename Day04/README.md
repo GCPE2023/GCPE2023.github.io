@@ -28,11 +28,11 @@ You can alternatively refer to <!--[these videos]()--> and follow along at your 
 
 ### Step 01: Download Relevant Files
 
-Download the sample receipts and Python code from [this repo](https://github.com/GCPE2023/GCPE-ReceiptExtractor). To download it, click on the green "Code" button and click "Download ZIP", or you can:
+Download the sample receipts and Python code from [this repo](https://github.com/GCPE2023/ReceiptExtractor). To download it, click on the green "Code" button and click "Download ZIP", or you can:
 
 ```sh
 # Only if you have Git installed
-git clone https://github.com/GCPE2023/GCPE-ReceiptExtractor.git
+git clone https://github.com/GCPE2023/ReceiptExtractor.git
 ```
 
 ### Step 02: Uploading Receipts to Google Drive
