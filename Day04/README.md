@@ -10,7 +10,7 @@ In this theory session, we will be going through the application of AI. We will 
 
 Some details about the event can be found in the [Event Page](https://gdsc.community.dev/events/details/developer-student-clubs-university-of-malaya-presents-gcpe-google-cloud-platform-for-everyone-workshop-2023-2023-03-26/). Below are some of the useful links that are relevant to the theory today.
 
-* Keynote by [Lim Hui Ern](https://github.com/huiern214) and [Vanessa Jing Taing](https://github.com/Vanessa-Taing)
+* [Keynote](./assets/slide.pdf) by [Lim Hui Ern](https://github.com/huiern214) and [Vanessa Jing Taing](https://github.com/Vanessa-Taing)
 * [Slido Q&A Link](https://app.sli.do/event/7KBiwvEjSCK3agsmE6yBvJ/live/questions)
 * [Google Cloud Storage Options](https://cloud.google.com/products/storage)
 * [What is Vision API](https://cloud.google.com/vision)
