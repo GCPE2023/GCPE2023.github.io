@@ -1,4 +1,4 @@
-# Day 04: Integrating AI in Your Website
+# Day 05: Data Visualization with Google Charts
 
 > Not the page you want to view? [Back to home page](../README.md)
 
@@ -12,7 +12,7 @@ In this theory session, we will be going through the data visualization options.
 Some details about the event can be found in the [Event Page](https://gdsc.community.dev/events/details/developer-student-clubs-university-of-malaya-presents-gcpe-google-cloud-platform-for-everyone-workshop-2023-2023-04-02/). Below are some of the useful links that are relevant to the theory today.
 
 * [Keynote](./assets/slide.pdf) by [Lim Jun Yi](https://github.com/LimJY03) and [Lim Jack Sheng](https://github.com/Jacksheng127).
-* [Slido Q&A Link]()
+* [Slido Q&A Link](https://app.sli.do/event/g23hjs7CXoJ316W6JDpaNp/live/questions?clusterId=eu1)
 * [Google Charts](https://developers.google.com/chart)
 * [Looker](https://www.looker.com/)
 
