@@ -18,4 +18,4 @@ The pages below stores the slides and the relevant links for each workshop:
 * [Day 02: Website Building and Hosting](./Day02/README.md)
 * [Day 03: Linking Frontend and Backend](./Day03/README.md)
 * [Day 04: Integrate AI in Your Website](./Day04/README.md)
-* [Day 05: Data Visualization with Google Charts]<!--(./Day05/README.md)-->
+* [Day 05: Data Visualization with Google Charts](./Day05/README.md)
